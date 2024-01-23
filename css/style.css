@@ -1,0 +1,461 @@
+/* Reset CSS */
+
+html, body {
+    background: #fff;
+    z-index: 1;
+    font-size: 1vw;
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  @font-face {
+      font-family: "TimesNewArial";
+      src: url("../tnr/TimesNewArialGX.ttf") format("truetype-variations"),
+           url("../tnr/TimesNewArialGX.woff") format("woff");
+  }
+  
+  a, button, input, label {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Your CSS */
+  
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+  .item{
+    width: 50vw;
+    height: 50vh;
+    float: left;
+    display: inline-block;
+  }
+  
+  .follower{
+    position: absolute;
+    z-index: 2;
+    font-size: 5vw;
+    line-height: 5vw;
+    width: 38vw;
+    height: 5vw;
+    font-family: TimesNewArial;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-variation-settings: 'srff' 50, 'ital' 0;
+  }
+  
+  .times{
+    font-family: TimesNewArial;
+    top: 0;
+    width: 100vw;
+    font-size: 2vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-variation-settings: 'srff' 100, 'ital' 0;
+    background-color: white;
+    white-space: nowrap;
+  }
+  
+  .arial{
+    font-family: TimesNewArial;
+    bottom: 0;
+    width: 100vw;
+    font-size: 2vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-variation-settings: 'srff' 0, 'ital' 0;
+    background-color: white;
+  }
+  
+  .backslantwrap{
+    height: 2.5vw;
+    width: 2.5vw;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: auto;
+    transform: rotate(-90deg);
+  
+  }
+  
+  .backslant{
+    left: -47vh;
+    width: 100vh;
+    font-family: TimesNewArial;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    font-size: 2vw;
+    padding-right: 0.75vw;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-variation-settings: 'srff' 50, 'ital' 100;
+    background-color: white;
+  }
+  
+  .slantwrap{
+    height: 2.5vw;
+    width: 2.5vw;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    transform: rotate(90deg);
+  
+  }
+  
+  .slant{
+    padding-left: 0.75vw;
+    left: -48vh;
+    width: 100vh;
+    font-family: TimesNewArial;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    font-size: 2vw;
+    padding-right: 0.75vw;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    font-variation-settings: 'srff' 50, 'ital' 100;
+    background-color: white;
+  }
+  
+  #one{
+    border-right: 0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+  }
+  
+  #one .info{
+    font-family: TimesNewArial;
+    margin-top: 3vw;
+    padding-bottom: 1vw;
+    height: calc(50vh - 3.15vw);
+    width: 50vw;
+    font-size: 2.5vw;
+    line-height: 2.9vw;
+    overflow: scroll;
+    color: white;
+    text-align: center;
+  }
+  
+  #four .info{
+    font-family: TimesNewArial;
+    padding-bottom: 3.5vw;
+    padding-top: 0.5vw;
+    padding-left: 1.25vw;
+    height: calc(50vh - 0.15vw);
+    width: 46.25vw;
+    font-size: 2.5vw;
+    line-height: 2.9vw;
+    overflow: scroll;
+    color: white;
+  }
+  
+  #two .abc{
+    font-family: TimesNewArial;
+    padding-top: 2.5vw;
+    margin-left: 0.25vw;
+    height: calc(50vh - 0.15vw);
+    width: 46.25vw;
+    padding-left: 1vw;
+    font-size: 5vw;
+    line-height: 5.4vw;
+    overflow: scroll;
+    color: white;
+    padding-bottom: 0.75vw;
+  }
+  
+  #three .abc{
+    font-family: TimesNewArial;
+    padding-bottom: 1vw;
+    margin-left: 3.75vw;
+    padding-top: 0.5vw;
+    height: calc(50vh - 2.5vw + 0.15vw);
+    width: 46.35vw;
+    padding-right: 1vw;
+    font-size: 5vw;
+    line-height: 5.4vw;
+    overflow: scroll;
+    color: white;
+  }
+  
+  #two{
+    border-bottom: 0.15vw solid black;
+  }
+  
+  #three{
+    border-right: 0.15vw solid black;
+  }
+  
+  .inner{
+    display: none;
+  }
+  
+  .info{
+    font-variation-settings: 'srff' 100, 'ital' 0;
+  }
+  
+  .srfital{
+    font-variation-settings: 'srff' 100, 'ital' 100;
+  }
+  
+  .gro{
+    font-variation-settings: 'srff' 0, 'ital' 0;
+  }
+  
+  .groital{
+    font-variation-settings: 'srff' 0, 'ital' 100;
+    transition: font-variation-settings 0.5s linear;
+  }
+  
+  .groital:hover{
+    font-variation-settings: 'srff' 0, 'ital' -100;
+  }
+  
+  .tnr{
+    animation-name: tnr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .mobile2 .tnr{
+    animation-name: tnr2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes tnr {
+      0% {
+        font-variation-settings: 'srff' 100, 'ital' 0;
+        letter-spacing: 0;
+      }
+      50% {
+        font-variation-settings: 'srff' 0, 'ital' 0;
+        letter-spacing: 0.07vw;
+      }
+      100% {
+        font-variation-settings: 'srff' 100, 'ital' 0;
+        letter-spacing: 0;
+      }
+  }
+  
+  @keyframes tnr2 {
+      0% {
+        font-variation-settings: 'srff' 100, 'ital' 0;
+        letter-spacing: 0;
+      }
+      50% {
+        font-variation-settings: 'srff' 0, 'ital' 0;
+        letter-spacing: 0.06vw;
+      }
+      100% {
+        font-variation-settings: 'srff' 100, 'ital' 0;
+        letter-spacing: 0;
+      }
+  }
+  
+  .info img{
+    width: 50%;
+  }
+  
+  .phonewrap{
+    position: relative;
+  }
+  
+  .mobile2{
+    width: 20vw;
+    height: 37vw;
+    background-color: #0a0a0a;
+    top: 5.2vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    overflow: scroll;
+  }
+  
+  .mobile2 *::-webkit-scrollbar, .mobile2::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .header{
+    background-color: black;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    padding-left: 0.5vw;
+    font-size: 2.1vw;
+    text-align: left;
+  }
+  
+  .burger{
+    position: absolute;
+    right: 0.5vw;
+    font-variation-settings: 'nvgn' 0;
+    transition: font-variation-settings 0.5s linear;
+    cursor: pointer;
+  }
+  
+  .content{
+    width: 100%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    text-align: left;
+    font-size: 3vw;
+    line-height: 3.35vw;
+    letter-spacing: -0.05vw;
+    font-family: TimesNewArial;
+  }
+  
+  .about{
+    font-size: 2.1vw;
+    line-height: 2.25vw;
+    text-align: left;
+    position: sticky;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    top: 2.5vw;
+    left: 0;
+    background-color: #0a0a0a;
+    width: 20vw;
+    height: 34.5vw;
+    overflow: scroll;
+    max-height: 0;
+  }
+  
+  *{
+    cursor: pointer;
+  }
+  
+  .mobile2 *:not(.burger){
+    cursor: auto;
+  }
+  
+  /* Media Queries */
+  
+  @media screen and (max-width:800px){
+  
+    .item:not(#one), .follower, .white{
+      display: none;
+    }
+  
+    #one .inner, #one{
+      display: block;
+      overflow-x: hidden;
+    }
+  
+    img{
+      display: none;
+    }
+  
+    .item{
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  
+    #one .info{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+    }
+  
+    .mobile2{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: auto;
+      margin-top: 5vw;
+    }
+  
+    .mobile2 *:not(.burger){
+      cursor: auto;
+    }
+  
+    .header{
+      z-index: 99;
+      position: fixed;
+      width: 100vw;
+      font-size: 11.5vw;
+      line-height: 11vw;
+    }
+  
+    .content{
+      width: 100vw;
+      font-size: 15vw;
+      line-height: 16vw;
+      height: auto;
+      position: relative;
+    }
+  
+    @keyframes tnr2 {
+        0% {
+          font-variation-settings: 'srff' 100, 'ital' 0;
+          letter-spacing: 0;
+        }
+        50% {
+          font-variation-settings: 'srff' 0, 'ital' 0;
+          letter-spacing: 0.25vw;
+        }
+        100% {
+          font-variation-settings: 'srff' 100, 'ital' 0;
+          letter-spacing: 0;
+        }
+    }
+  
+    .about{
+      display: none;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      width: 100vw;
+      font-size: 11.5vw;
+      line-height: 12vw;
+      height: auto;
+      max-height: 10000vw;
+    }
+  
+  }
+  
