@@ -1,23 +1,32 @@
 <!DOCTYPE html> 
-<html> 
-    
+<html lang="en"> 
 <head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Nicole Choe Portfolio"/>
 	<title>Resume viewer</title> 
-    <style>
-        body {
-          background-image: url('assets/deskbg.png');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: 100% 100%;
-        }
-        </style>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+      body {
+        background-image: url('assets/deskbg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+  </style>
 </head> 
 
 <body> 
-    <center>
-    <img src="assets/resume.png" style="padding-top: 90px;
-    padding-bottom: 90px; width:80%;height:80%">
-    </center>
+    <img class="center" src="assets/resume.png" style="padding-top: 90px;
+    padding-bottom: 10px; width:80%;height:80%">
+    <a class="center" href="assets/Choe_Nicole Resume.pdf" download="Choe_Nicole Resume">
+      <span style="font-family:Satoshi-Black;padding-bottom: 90px;">DOWNLOAD(PDF)</span></a>
 </body> 
 
 </html>
