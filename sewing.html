@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nicole Choe Portfolio" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Sewing</title>
+    <style>
+        #colors {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+        .swatch {
+          border: 1px solid #000;
+          background-color: #fff;
+          padding: 3px;
+          margin: 1px;
+          font-size: 8pt;
+        }
+        .colorblock {
+          border: 1px solid #000;
+          height: 60px;
+          width: 60px;
+          margin-bottom: 5px;
+        }
+        .swatch:nth-child(even) {
+          transform: rotate(-0.004turn);
+        }
+        .swatch:nth-child(2n) {
+          transform: rotate(-0.004turn) translateY(-4px);
+        }
+        .swatch:nth-child(odd) {
+          transform: rotate(0.004turn);
+        }
+        .swatch:nth-child(6n-3) {
+          transform: rotate(0.004turn) translateX(-3px) translateY(3px);
+        }
+        .swatch:nth-child(6n) {
+          transform: rotate(-0.004turn) translateX(-3px);
+        }
+        #bottom {
+          bottom: 0;
+        }
+        #bottom img {
+          width: 100%;
+        }
+      </style>
+  </head>
+
+<body style="background-color:#b2d2a1 ">
+    <div style="text-align:center; padding-top: 50px; padding-bottom: 50px;"><img style=" height:150px "src="assets/underconstruction.png"></div>
+      <div id='colors'>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#66023C;'></div>
+          <div class='name'>
+            <b>plum<br/>
+            	#66023C</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#800000;'></div>
+          <div class='name'>
+            <b>maroon<br/>
+            #800000</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#E34234;'></div>
+          <div class='name'>
+            <b>vermillion<br/>
+            	#E34234</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#ED9121;'></div>
+          <div class='name'>
+            <b>carrot<br/>
+            #ED9121</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:	#F8DE7E;'></div>
+          <div class='name'>
+            <b>mellow<br/>
+            #F8DE7E</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#9ACD32;'></div>
+          <div class='name'>
+            <b>chartreuse<br/>
+            #9ACD32</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#578D3A;'></div>
+          <div class='name'>
+            <b>forest<br/>
+            #578D3A</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#2E8B57;'></div>
+          <div class='name'>
+            <b>sea green<br/>
+            #2E8B57</b>
+          </div>
+        </div>
+        <div class='swatch'>
+          <div class='colorblock' style='background-color:#05472A;'></div>
+          <div class='name'>
+            <b>evergreen<br/>
+            #05472A</b>
+          </div>
+        </div>
+      </div>
+  <div id="bottom"><img src="assets/zinnias.png"/></div>
+</body>
+</html>
