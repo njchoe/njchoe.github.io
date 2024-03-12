@@ -101,6 +101,7 @@ button {cursor: pointer;}
 
 .link--nav {
   color: var(--clr-fg);
+  text-transform: lowercase;
   font-weight: 500;
 }
 
@@ -114,6 +115,7 @@ button {cursor: pointer;}
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
+  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -148,6 +150,7 @@ button {cursor: pointer;}
 }
 
 .btn--plain {
+  text-transform: initial;
   background-color: var(--clr-bg-alt);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   border: 0;
@@ -201,6 +204,7 @@ main {
 .section__title {
   text-align: center;
   margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .nav__list {
@@ -301,6 +305,10 @@ main {
 
 .skills__list-item {
   margin: 0.5em;
+}
+
+.contact {
+  flex-direction: column;
 }
 
 .footer {
