@@ -49,76 +49,237 @@
         #bottom img {
           width: 100%;
         }
+        html {
+          margin:    0 auto;
+          padding:    0;
+          max-width: 900px;
+          height:    900px;}
+        body {
+          margin:     0;
+          font-size: medium;
+          font-family: satoshi;
+          font-weight: 600
+          }
+
+        p{
+          font-weight: 600;
+          font-size: large;}
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        ul {
+          list-style-type: disc;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 0;
+        }
       </style>
   </head>
-
-<body style="background-color:#b2d2a1 ">
-    <div style="text-align:center; padding-top: 50px; padding-bottom: 50px;"><img style=" height:150px "src="assets/underconstruction.png"></div>
-      <div id='colors'>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#66023C;'></div>
-          <div class='name'>
-            <b>plum<br/>
-            	#66023C</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#800000;'></div>
-          <div class='name'>
-            <b>maroon<br/>
-            #800000</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#E34234;'></div>
-          <div class='name'>
-            <b>vermillion<br/>
-            	#E34234</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#ED9121;'></div>
-          <div class='name'>
-            <b>carrot<br/>
-            #ED9121</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:	#F8DE7E;'></div>
-          <div class='name'>
-            <b>mellow<br/>
-            #F8DE7E</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#9ACD32;'></div>
-          <div class='name'>
-            <b>chartreuse<br/>
-            #9ACD32</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#578D3A;'></div>
-          <div class='name'>
-            <b>forest<br/>
-            #578D3A</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#2E8B57;'></div>
-          <div class='name'>
-            <b>sea green<br/>
-            #2E8B57</b>
-          </div>
-        </div>
-        <div class='swatch'>
-          <div class='colorblock' style='background-color:#05472A;'></div>
-          <div class='name'>
-            <b>evergreen<br/>
-            #05472A</b>
-          </div>
-        </div>
-      </div>
-  <div id="bottom"><img src="assets/zinnias.png"/></div>
+    <body>
+  
+<body style="background-color:#eaf8e3 ">
+  <div style="text-align: center;">
+    <a href="https://njchoe.me/"><img src="logo.png" style="width:10rem;"></a>
+  </div>
+  <div style="padding: 10px 10%;">
+  <h2>Preface & Philosophy</h2><br><br>
+  <p>When you hear the word "sewing", what do you think of?<br><br></p>
+    <div class="row">
+      <div class="column">
+        <img src="assets/grandmasew.jpeg">
+      </div><br>
+      <p>Sewing is often perceived as a traditional, domestic skill that is practiced by 
+        women in the home. Consequently, it has been subject to misogynistic stereotypes.</p>
+        <details style="display: block; padding-inline-start: 30px;">
+        <summary>Some misogynistic perceptions associated with sewing include:</summary>
+          <ul> 
+            <li><b>Sewing as "women's work":</b> There is a deeply ingrained perception that sewing 
+              is inherently a feminine activity, tied to traditional gender roles and domestic 
+              duties historically assigned to women.</li>
+            <li><b>Lack of value or importance:</b> Sewing and other textile crafts have often been 
+              dismissed as trivial or unimportant, reflecting a broader devaluation of traditionally 
+              female-dominated activities and skills.</li>
+            <li><b>Lack of complexity or skill:</b> There is a misconception that sewing is a simple, 
+              mindless task that requires little skill or intelligence, undermining the expertise 
+              and artistry involved in many sewing and textile techniques.</li>
+            <li><b>Domestic confinement: </b>Sewing has been viewed as an activity that confines women to 
+              the domestic sphere, reinforcing patriarchal notions of a woman's "proper place" being 
+              in the home.</li>
+            <li><b>Lack of economic value:</b> The products of sewing, especially those made for personal or 
+              household use, have often been undervalued or seen as having little economic worth, 
+              contributing to the perception of sewing as a non-productive or non-profitable pursuit. This is 
+            exacerbated by modern "fast fashion".</li></ul>
+        </details>
+      <p><br>However, sewing and textile engineering has revolutionized human history and is not only essential, 
+        but also highly technical.<br></p>
+      <details style="display: block; padding-inline-start: 30px;">
+        <summary> Engineering applications include:</summary>
+        <ul>
+          <li>Materials science and engineering: Understanding the properties, behavior, and 
+            performance of different materials is crucial. This involves 
+            principles of polymer science, materials chemistry, and material testing.</li>
+          <li>Mechanical engineering: Sewing machines and textile machinery involve principles 
+            of mechanical design, kinematics, dynamics, and vibration analysis. The interaction 
+            between needle, thread, and fabric is a complex mechanical process.</li>
+          <li>Structural engineering: The construction of textile products, such as clothing 
+            or technical textiles, involves principles of structural design, stress analysis, 
+            and load distribution to ensure durability and performance.</li>
+          <li>Fluid mechanics: Principles of fluid dynamics and aerodynamics are applied in 
+            the design of textile machinery, such as air-jet looms and air-laid nonwoven production processes.</li>
+          <li>Tribology: The study of friction, wear, and lubrication is crucial in understanding 
+            the interaction between sewing needles, threads, and fabrics, as well as the performance 
+            of textile machinery components.</li>
+          <li>Control systems: Modern sewing and textile machinery incorporates advanced control 
+            systems, including programmable logic controllers (PLCs), computer numerical control 
+            (CNC), and robotics, which require principles of control theory and systems engineering.</li>
+          <li>Computer-aided design and manufacturing (CAD/CAM): These tools are widely used in pattern 
+            design, grading, marker making, and automated cutting processes, involving principles of 
+            computer science, geometric modeling, and optimization algorithms.</li>
+          <li>Textile testing and quality control: Principles of metrology, nondestructive testing, and 
+            statistical process control are applied to ensure the quality and performance of textile 
+            products and processes.</li>
+          <li>Ergonomics and human factors: The design of sewing workstations, machinery interfaces, 
+            and textile production environments involves principles of ergonomics, anthropometrics, 
+            and human-machine interaction to ensure operator safety and productivity.</li>
+          <li><a href="https://www.sciencedirect.com/science/article/pii/S2451929421005180">
+            Bioengineering applications:</a> Textiles are highly flexible and conform to our bodies. 
+            Textile science is used in varied applications from skin grafting and surgical meshes to 
+            nano-scale protein engineering of fibrous polymers.</li>
+          </ul>
+        </details>
+        <p><br>Textiles and sewing have also played a pivotal role in political movements and ideological 
+          debates throughout history, often serving as symbols of power, resistance, and economic 
+          systems. </p>
+          <details style="display: block; padding-inline-start: 30px;">
+            <summary>Prominent examples include:</summary>
+            <ul>
+          <li><b>Marxist theory: </b>In Das Kapital, Marx used the textile industry, particularly the cotton 
+            trade and factories in England, as a prime illustration of the exploitation of workers under 
+            capitalism. He analyzed in detail the harsh working conditions, long hours, and meager wages 
+            endured by textile workers, arguing that these conditions were a direct result of the capitalist 
+            system's drive for profit maximization at the expense of labor.
+            <br>Marx's vivid descriptions of the "dark satanic mills" and the suffering of women and 
+            children employed in textile factories served as a powerful indictment of the industrial 
+            capitalist model. He portrayed the textile industry as a microcosm of the broader class 
+            struggle between the bourgeoisie and proletariat.</li>
+            <li><b>The Indian Independence movement</b>
+            Mahatma Gandhi's promotion of Khadi (hand-spun and hand-woven cloth) became a symbol of 
+            self-reliance and a rejection of British-imposed textile imports. The act of spinning one's
+             own cloth with colorful Indian patterns was a form of peaceful cultural resistance
+             against colonial rule and economic subjugation.</li>
+            <li><b>American Suffrage movement:</b> Embroidered banners were a common sight at the early 
+              20th century Women's Suffrage movement. The colors, patterns, and imagery used can 
+              all carry specific meanings. Think of a protest group using a certain colored bandana 
+              or piece of clothing to signify their affiliation.</li>
+            <li><b>Recent times: </b>the global textile and apparel industry has been a focal 
+            point for debates around fair labor practices, worker rights, and environmental 
+            sustainability. Movements advocating for ethical and eco-friendly textiles have 
+            emerged as a response to concerns over exploitative labor conditions, pollution, 
+            and the industry's carbon footprint.</li>
+    </ul></details>
+    <p><br> Ultimately, there is no reason sewing should be seen as lesser than its traditionally 
+      masculine analogue disciplines such as woodworking or metalworking, which I think is a bias 
+      that is underacknowledged.<br><br>
+      If you're interested, some good books on this topic include:<ul>
+      <li>The Fabric of Civilization by Virginia Postrel</li> 
+      <li>The Golden Thread: How Fabric Changed History by Kassia St. Clair</li>
+      <li>Worn: A People's History of Clothing by Sofi Thanhauser.</li></p>
+      <br></ul></div>
+    <details style="display: block; padding-inline-start: 30px;">
+      <summary>
+        Personal connection
+      </summary>
+        <span>
+        When she was younger, my grandmother worked as a seamstress earning very low wages in Korea. 
+        While Korea is now an economic powerhouse due to influence from the US and adoption of capitalism,
+        in the not so distant past, it was wrought with poverty and greater class inequality as well
+        as traditional patriarchic beliefs. My grandmother stopped going to school around her 4th grade.
+        <br><br>
+        When I was younger, my grandmother made sure I knew how to sew. She knew it as one of 
+        the only ways women could make income, and did not have much faith in my education. As I grew 
+        up and my mother and aunt began to become more successful in their careers, my grandmother 
+        realized the potential of education. She now encourages me to study and tells me not to waste 
+        my time sewing.
+        <br><br>
+        While a sewing/fashion career isn't really attractive to me, I think it is still a valuable 
+        skill and I enjoy it for its utilitarian purposes as well as its potential for experimental 
+        creative expression.</span>
+        <br>
+    </details></div>
+<div style="text-align:center; padding-top: 50px; padding-bottom: 50px;"><img style=" height:150px "src="assets/underconstruction.png"></div>
+<div id='colors'>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#66023C;'></div>
+    <div class='name'>
+      <b>plum<br/>
+        #66023C</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#800000;'></div>
+    <div class='name'>
+      <b>maroon<br/>
+      #800000</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#E34234;'></div>
+    <div class='name'>
+      <b>vermillion<br/>
+        #E34234</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#ED9121;'></div>
+    <div class='name'>
+      <b>carrot<br/>
+      #ED9121</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:	#F8DE7E;'></div>
+    <div class='name'>
+      <b>mellow<br/>
+      #F8DE7E</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#9ACD32;'></div>
+    <div class='name'>
+      <b>chartreuse<br/>
+      #9ACD32</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#578D3A;'></div>
+    <div class='name'>
+      <b>forest<br/>
+      #578D3A</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#2E8B57;'></div>
+    <div class='name'>
+      <b>sea green<br/>
+      #2E8B57</b>
+    </div>
+  </div>
+  <div class='swatch'>
+    <div class='colorblock' style='background-color:#05472A;'></div>
+    <div class='name'>
+      <b>evergreen<br/>
+      #05472A</b>
+    </div>
+  </div>
+</div>
+<div id="bottom"><img src="assets/zinnias.png"/></div>
 </body>
+
 </html>
