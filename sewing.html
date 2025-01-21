@@ -10,69 +10,30 @@
     <meta http-equiv='pragma' content='no-cache'>
     <title>Sewing</title>
     <style>
-        #colors {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-        }
-        .swatch {
-          border: 1px solid #000;
-          background-color: #fff;
-          padding: 3px;
-          margin: 1px;
-          font-size: 8pt;
-        }
-        .colorblock {
-          border: 1px solid #000;
-          height: 60px;
-          width: 60px;
-          margin-bottom: 5px;
-        }
-        .swatch:nth-child(even) {
-          transform: rotate(-0.004turn);
-        }
-        .swatch:nth-child(2n) {
-          transform: rotate(-0.004turn) translateY(-4px);
-        }
-        .swatch:nth-child(odd) {
-          transform: rotate(0.004turn);
-        }
-        .swatch:nth-child(6n-3) {
-          transform: rotate(0.004turn) translateX(-3px) translateY(3px);
-        }
-        .swatch:nth-child(6n) {
-          transform: rotate(-0.004turn) translateX(-3px);
-        }
-        #bottom {
-          bottom: 0;
-        }
-        #bottom img {
-          width: 100%;
-        }
+      #bottom {
+        bottom: 0;
+      }
+      #bottom img {
+        width: 100%;
+      }
         html {
           margin:    0 auto;
           padding:    0;
           max-width: 900px;
-          height:    900px;}
+          height:    900px;
+          color:#17ff02}
         body {
           margin:     0;
           font-size: medium;
-          font-family: satoshi;
-          font-weight: 600
+          font-family: jogan;
+          font-weight: 400
           }
 
         p{
-          font-weight: 600;
+          font-weight: 500;
           font-size: large;}
-        .row {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 4px;
-        }
-        .column {
-          flex: 25%;
-          max-width: 25%;
-          padding: 0 4px;
+        details{
+          content:">";
         }
         ul {
           list-style-type: disc;
@@ -84,18 +45,22 @@
   </head>
     <body>
   
-<body style="background-color:#eaf8e3 ">
+<body style="background-color:hsl(0, 0%, 0%) ">
   <div style="text-align: center;">
     <a href="https://njchoe.me/"><img src="logo.png" style="width:10rem;"></a>
   </div>
-  <div style="padding: 10px 10%;">
-  <h2>Preface & Philosophy</h2><br><br>
-  <p>When you hear the word "sewing", what do you think of?<br><br></p>
-    <div class="row">
-      <div class="column">
-        <img src="assets/grandmasew.jpeg">
-      </div><br>
-      <p>Sewing is often perceived as a traditional, domestic skill that is practiced by 
+  <div style="padding: 10px 10%;border-width:2px;
+  border-style:solid;background-color: black;
+  border-color:#17ff02;"><br>
+  <div><img src="assets/typewriter.gif" style="width:100%"/></div>
+  <p>When you hear the word "sewing", what do you think of? Simple, repetitive manual labor? Your closet? Your grandmother?<br><br></p>
+      <div style=" justify-content: center; display: flex; flex-wrap: wrap;">
+        <img src="assets/scissors.png" style="width:100px"> <div style="width:20px"></div>
+        <img src="assets/button.png" style="width:100px"><div style="width:20px"></div>
+        <img src="assets/sewingmachine.png" style="width:100px"><div style="width:20px"></div>
+        <img src="assets/needle.png" style="width:100px">
+      </div>
+      <p><br>Sewing is often perceived as a traditional, domestic skill that is practiced by 
         women in the home. Consequently, it has been subject to misogynistic stereotypes.</p>
         <details style="display: block; padding-inline-start: 30px;">
         <summary>Some misogynistic perceptions associated with sewing include:</summary>
@@ -191,7 +156,7 @@
       <li>The Fabric of Civilization by Virginia Postrel</li> 
       <li>The Golden Thread: How Fabric Changed History by Kassia St. Clair</li>
       <li>Worn: A People's History of Clothing by Sofi Thanhauser.</li></p>
-      <br></ul></div>
+      <br></ul>
     <details style="display: block; padding-inline-start: 30px;">
       <summary>
         Personal connection
@@ -208,78 +173,12 @@
         realized the potential of education. She now encourages me to study and tells me not to waste 
         my time sewing.
         <br><br>
-        While a sewing/fashion career isn't really attractive to me, I think it is still a valuable 
+        While a sewing/fashion career isn't really attractive to me, I think it is such a valuable 
         skill and I enjoy it for its utilitarian purposes as well as its potential for experimental 
         creative expression.</span>
         <br>
-    </details></div>
-<div style="text-align:center; padding-top: 50px; padding-bottom: 50px;"><img style=" height:150px "src="assets/underconstruction.png"></div>
-<div id='colors'>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#66023C;'></div>
-    <div class='name'>
-      <b>plum<br/>
-        #66023C</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#800000;'></div>
-    <div class='name'>
-      <b>maroon<br/>
-      #800000</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#E34234;'></div>
-    <div class='name'>
-      <b>vermillion<br/>
-        #E34234</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#ED9121;'></div>
-    <div class='name'>
-      <b>carrot<br/>
-      #ED9121</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:	#F8DE7E;'></div>
-    <div class='name'>
-      <b>mellow<br/>
-      #F8DE7E</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#9ACD32;'></div>
-    <div class='name'>
-      <b>chartreuse<br/>
-      #9ACD32</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#578D3A;'></div>
-    <div class='name'>
-      <b>forest<br/>
-      #578D3A</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#2E8B57;'></div>
-    <div class='name'>
-      <b>sea green<br/>
-      #2E8B57</b>
-    </div>
-  </div>
-  <div class='swatch'>
-    <div class='colorblock' style='background-color:#05472A;'></div>
-    <div class='name'>
-      <b>evergreen<br/>
-      #05472A</b>
-    </div>
-  </div>
-</div>
-<div id="bottom"><img src="assets/zinnias.png"/></div>
+    </details><br><br></div>
+<div id="bottom"><img src="assets/cyber.png" /></div>
 </body>
 
 </html>
