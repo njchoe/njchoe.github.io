@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>luzitype</title>
+
+  <!-- ======= Custom Font Face (Adapt to your actual file paths) ======= -->
+  <style>
+    @font-face {
+      font-family: 'Koper';
+      src: url('fonts/Koper-VF-Upright-TEST-FONT.ttf') format('woff');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Spezia';
+      src: url('fonts/SpeziaCompleteWebVF-Upright-TEST-FONT.woff2') format('woff');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Beirut';
+      src: url('fonts/BeirutDisplayWeb-VF-Upright-TEST-FONT.woff2') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Recife';
+      src: url('fonts/RecifeCompleteWeb-VF-Upright-TEST-FONT.woff2') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Albaro';
+      src: url('fonts/AlbaroDisplayWeb-VF-Upright-TEST-FONT.woff2') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Yport';
+      src: url('fonts/YportWeb-VF-Upright-TEST-FONT.woff2') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif; 
+      color: #333;
+    }
+
+    .image-layers {
+      position: relative;
+      width: 100%;
+      height: 550px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .marquee-container marquee {
+      font-size: 200px;
+      font-weight: 400;
+      background-color: transparent;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      top: -200px;
+      text-align: center;
+    }
+
+    .paragraph {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 1rem auto;
+      text-align: justify;
+      line-height: 1.6;
+      margin-top: -230px; /* pulls the paragraph up closer to the images */
+    }
+    @keyframes fadeIn {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+   <!-- JavaScript for the Slideshow -->
+   <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    // Initialize display of first slide
+    showSlide(slideIndex);
+
+    function plusSlides(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+      // Wrap around if out of range
+      if (n >= slides.length) { slideIndex = 0; }
+      if (n < 0) { slideIndex = slides.length - 1; }
+
+      // Hide all slides
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      // Show the selected slide
+      slides[slideIndex].style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <body style="margin:0; font-family: 'Yport'; color: #333; background-color: #f2f2f2; line-height: 1.6;">
+    <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 2rem; box-sizing: border-box;">
+      
+      <!-- Heading -->
+      <h1 style="margin: 0 0 1rem; font-size: 5rem; text-align: center; font-family: 'Yport', sans-serif;">
+        Luzi Type Foundry
+      </h1>
+      
+    <!-- Row with Image (left) and Text (right) -->
+    <div style="display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap: 1rem; margin-bottom:1.5rem;">
+      <!-- Image -->
+      <img
+        src="assets/luzi-gantenbein.webp"
+        style="max-width:200px; height:auto; object-fit:cover;"
+      />
+      <!-- Introductory Text -->
+      <p style="max-width:500px; font-size:1rem; text-align:justify; font-family:'Yport', sans-serif; margin: 100px;">
+        Founded in 2013 by type designer Luzi Gantenbein, Luzi Type has emerged as one of Switzerlands 
+        most innovative type foundries. Based in Bern, they represent a combination of 
+        Swiss precision and global design influences, shaped by Gantenbeins experiences in London, 
+        Santiago de Chile, and Zurich.
+      </p>
+    </div>
+      
+      <!-- Carousel Container -->
+      <div id="carousel" style="position: relative; max-width: 700px; margin: 3rem auto; overflow: hidden; background-color: #fff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); border-radius: 8px;">
+        
+        <!-- Carousel Inner (slides container) -->
+        <div id="carousel-inner" style="display: flex; transition: transform 0.5s ease;">
+          
+          <!-- Slide 1 -->
+          <div style="min-width: 100%; box-sizing: border-box; padding: 10rem;">
+            <h2 style="margin-top: 0; font-size: 1.5rem; color: #111; text-align: center;">
+              The Designer Behind the Letters
+            </h2>
+            <p style="font-size: 1rem; color: #333; text-align: justify;">
+              Gantenbeins journey began in the Swiss Alps, where the regions strong design heritage 
+              would later influence his typographic approach. He has a degree in Visual Communication from 
+              Bern University of the Arts. The Swiss influence is evident in the foundrys work, especially 
+              in their commitment to precision, functionality, and timeless design principles.
+            </p>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div style="min-width: 100%; box-sizing: border-box; padding: 10rem;">
+            <h2 style="margin-top: 0; font-size: 1.5rem; color: #111; text-align: center;">
+              Design Philosophy and Approach
+            </h2>
+            <p style="font-size: 1rem; color: #333; text-align: justify;">
+              What sets Luzi Type apart is their dedication to Clearness and Reduction,
+              a modernist approach that prioritizes clarity and simplicity without sacrificing character. 
+              This philosophy manifests in typefaces that balance functionality with subtle, thoughtful 
+              details that reveal themselves through use.
+            </p>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div style="min-width: 100%; box-sizing: border-box; padding: 10rem;">
+            <h2 style="margin-top: 0; font-size: 1.5rem; color: #111; text-align: center;">
+              Educational Transparency
+            </h2>
+            <p style="font-size: 1rem; color: #333; text-align: justify;">
+              One of the most valuable aspects of Luzi Type for designers is their
+              transparency in their creative process. The foundry provides extensive design notes for 
+              their typefaces, describing insights into their decision-making, iterations, and 
+              technical considerations. These detailed documentations are great learning resources.
+            </p>
+          </div>
+          
+          <!-- Slide 4 -->
+          <div style="min-width: 100%; box-sizing: border-box; padding: 10rem;">
+            <h2 style="margin-top: 0; font-size: 1.5rem; color: #111; text-align: center;">
+              Contemporary Applications
+            </h2>
+            <p style="font-size: 1rem; color: #333; text-align: justify;">
+              Luzi Types influence is global, with their typefaces appearing in projects 
+              ranging from editorial design to brand identity. Their client portfolio includes 
+              INTRUSO Magazine, Lululemon, and Küng Holzbau, demonstrating the 
+              versatility of their designs across different contexts and cultures.
+            </p>
+          </div>
+          
+          <!-- Slide 5 -->
+          <div style="min-width: 100%; box-sizing: border-box; padding: 10rem;">
+            <h2 style="margin-top: 0; font-size: 1.5rem; color: #111; text-align: center;">
+              Innovation in Type Design
+            </h2>
+            <p style="font-size: 1rem; color: #333; text-align: justify;">
+              One of their interersting creations is the Faro typeface. Faro features two distinct 
+              moods: Lucky and Sad, which are differentiated by small variations in the letterforms. 
+              This emotional expression through typography pushes how fonts can express feeling while 
+              maintaining usability.
+            </p>
+          </div>
+          
+        </div>
+        
+        <!-- Arrow Controls -->
+        <div id="prevControl" style="position: absolute; top: 50%; left: 1rem; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; cursor: pointer; user-select: none;">
+          &#9664;
+        </div>
+        <div id="nextControl" style="position: absolute; top: 50%; right: 1rem; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center; cursor: pointer; user-select: none;">
+          &#9654;
+        </div>
+      </div>
+      
+      <!-- Conclusion Paragraph -->
+      <p style="max-width: 700px; margin: 0 auto; font-size: 1rem; text-align: justify; font-family: 'Yport', sans-serif;">
+        If you want to explore contemporary type design that honors historical 
+        principles while still being innovative, Luzi Type is a great model. Their work 
+        demonstrates how traditional design can be reinterpreted for a range of modern contexts and still 
+        maintain quality and versatility.
+      </p>
+      
+    </div>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('#carousel-inner > div');
+        const totalSlides = slides.length;
+        const carouselInner = document.getElementById('carousel-inner');
+  
+        function updateCarousel() {
+          carouselInner.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        }
+  
+        document.getElementById('prevControl').addEventListener('click', function () {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalSlides - 1;
+          updateCarousel();
+        });
+  
+        document.getElementById('nextControl').addEventListener('click', function () {
+          currentIndex = (currentIndex + 1) % totalSlides;
+          updateCarousel();
+        });
+      });
+    </script>
+
+  <!-- 
+    ===========================
+        1) KOPER
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Koper'; /* Use the Koper font */
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem; 
+      background-color: #ffeec9;
+    "
+  >
+    <!-- ======= IMAGE LAYERS (KOPER) ======= -->
+    <div class="image-layers">
+      <img 
+        src="assets/Koper003.png" 
+        style="
+          position:absolute;
+          top:40%;
+          left:5%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-10deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-10deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Koper002.png"
+        style="
+          position:absolute;
+          top:10%;
+          left:20%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Koper001.jpg"
+        style="
+          position:absolute;
+          top:10%;
+          left:35%;
+          width:450px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(0deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(0deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Koper004.png"
+        alt="Koper Image 4"
+        style="
+          position:absolute;
+          top:50%;
+          left:50%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Koper005.png"
+        style="
+          position:absolute;
+          top:20%;
+          left:70%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(10deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(10deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        KOPER: art nouveau, crystalline - KOPER: art nouveau, crystalline
+      </marquee>
+    </div>
+
+    <p class="paragraph">
+      Blending the delicate artistry of calligraphy with the raw and rustic essence of woodcut illustrations, 
+      <strong>Koper</strong> takes inspiration from the captivating Art Nouveau designs crafted by Czech designer 
+      Vojtěch Preissig. This typeface is meticulously shaped using precise straight lines, contributing to its 
+      distinct visual appeal.<br><br>
+      The family package includes two variable fonts: upright and italic, offering a wide range of possibilities 
+      from Regular to Display.
+    </p>
+  </div>
+
+
+  <!-- 
+    ===========================
+        2) SPEZIA SECTION
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Spezia'; /* Use the Spezia font */
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem;
+      background-color: #d9ecff;
+    "
+  >
+    <div class="image-layers">
+      <img 
+        src="assets/Spezia004.png"
+        style="
+          position:absolute;
+          top:10%;
+          left:10%;
+          width:150px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-12deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-12deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Spezia002.jpg"
+        style="
+          position:absolute;
+          top:40%;
+          left:20%;
+          width:350px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(0deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(0deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Spezia003.jpg"
+        style="
+          position:absolute;
+          top:5%;
+          left:30%;
+          width:400px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Spezia001.png"
+        alt="Seconda Image 4"
+        style="
+          position:absolute;
+          top:10%;
+          left:45%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(10deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(10deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Spezia005.png"
+        alt="Seconda Image 5"
+        style="
+          position:absolute;
+          top:20%;
+          left:65%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Spezia006.png"
+        style="
+          position:absolute;
+          top:30%;
+          left:70%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        SPEZIA: contemporary, diverse - SPEZIA: contemporary, diverse
+      </marquee>
+    </div>
+
+    <p class="paragraph" >
+      Writing and reading involve diverse dimensions and varying tools. Spezia is a sans-serif typeface 
+      designed to meet contemporary demands. With a harmonious visual balance and modern essence, Spezia 
+      demonstrates its quality. Rooted in the neo-grotesque genre, it possesses a distinctive voice and 
+      a simple monoline structure. <br><br>Consistent character-widths further enhance its simplicity. The 
+      extensive range of weights and widths, spanning from Compressed to Extended, empowers users with 
+      flexibility. With 128 font weights available, users can fully explore and fine-tune in detail their 
+      typographic compositions. <br><br>Together with Spezia Serif, this typeface forms a unique and comprehensive 
+      typographic system. Find more information about the design process of Spezia at our notes. Spezia 
+      comprises nine subfamilies: Compressed, Extra Condensed, Condensed, Narrow, Normal, Wide, Extended, 
+      SemiMono, and Mono. The typeface is available as individual weights and as a variable font.
+    </p>
+  </div>
+
+
+  <!-- 
+    ===========================
+        3) BEIRUT SECTION
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Beirut'; /* Use the Beirut font */
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem;
+      background-color: #171717;
+      color: #fffaf1;
+    "
+  >
+    <div class="image-layers">
+      <img 
+        src="assets/Beirut004.jpg"
+        alt="ThirdFont Image 1"
+        style="
+          position:absolute;
+          top:30%;
+          left:5%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Beirut006.jpg"
+        alt="ThirdFont Image 2"
+        style="
+          position:absolute;
+          top:60%;
+          left:10%;
+          width:350px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-3deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-3deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Beirut003.jpg"
+        alt="ThirdFont Image 3"
+        style="
+          position:absolute;
+          top:10%;
+          left:22%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(2deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(2deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Beirut001.jpg"
+        alt="ThirdFont Image 4"
+        style="
+          position:absolute;
+          top:25%;
+          left:40%;
+          width:450px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Beirut005.png"
+        alt="ThirdFont Image 5"
+        style="
+          position:absolute;
+          top:15%;
+          left:60%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Beirut002.jpg"
+        style="
+          position:absolute;
+          top:25%;
+          left:75%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" style="font-weight: 900;" direction="left" scrollamount="8">
+        BEIRUT: geometry, style - BEIRUT: geometry, style
+      </marquee>
+    </div>
+
+    <p class="paragraph">
+      Characterised by strong shapes and contrasting elements, Beirut is built 
+      upon an innovative calligraphic principle. This font consists of two designs: the display version, 
+      suitable for expressive titles, and the text version, optimised for easy reading at smaller sizes. 
+      Beirut’s unique style stands out both in print and on screens.
+    </p>
+  </div>
+
+
+  <!-- 
+    ===========================
+        4) RECIFE SECTION
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Recife'; /* Use the Recife font */
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem;
+      background-color: #fceacd;
+    "
+  >
+    <div class="image-layers">
+      <img 
+        src="assets/Recife003.png"
+        alt="FourthFont Image 1"
+        style="
+          position:absolute;
+          top:10%;
+          left:33%;
+          width:150px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Recife002.png"
+        alt="FourthFont Image 2"
+        style="
+          position:absolute;
+          top:25%;
+          left:10%;
+          width:350px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-3deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-3deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Recife001.png"
+        alt="FourthFont Image 3"
+        style="
+          position:absolute;
+          top:10%;
+          left:45%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(2deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(2deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Recife004.png"
+        alt="FourthFont Image 4"
+        style="
+          position:absolute;
+          top:50%;
+          left:60%;
+          width:400px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(8deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" direction="left" scrollamount="8">
+        RECIFE: traditional, editorial - RECIFE: traditional, editorial
+      </marquee>
+    </div>
+
+    <p class="paragraph">
+      This innovative 
+      calligraphy reimagines traditional letterforms by integrating extra spacing within the 
+      counterspaces of letters like a, f, and s, resulting in a unique and distinctive aesthetic.
+      Reflecting the spirit of Dutch antique fonts such as Plantin and Times, 
+      the <a href="https://www.luzi-type.ch/notes-inside" style="color:black">Recife </a>typeface 
+      is carefully crafted to meet the editorial needs of today. 
+    </p>
+  </div>
+
+    <!-- 
+    ===========================
+        3)  albaro
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Albaro';
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem;
+      background-color: #001d05;
+      color: #fffaf1;
+    "
+  >
+    <div class="image-layers">
+      <img 
+        src="assets/albaro001.jpg"
+        alt="ThirdFont Image 1"
+        style="
+          position:absolute;
+          top:25%;
+          left:5%;
+          width:400px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/albaro004.png"
+        alt="ThirdFont Image 2"
+        style="
+          position:absolute;
+          top:25%;
+          left:70%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-3deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-3deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/albaro003.jpg"
+        alt="ThirdFont Image 3"
+        style="
+          position:absolute;
+          top:10%;
+          left:35%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(2deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(2deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/albaro002.png"
+        alt="ThirdFont Image 4"
+        style="
+          position:absolute;
+          top:10%;
+          left:55%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/albaro005.png"
+        alt="ThirdFont Image 5"
+        style="
+          position:absolute;
+          top:10%;
+          left:10%;
+          width:400px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/albaro006.jpg"
+        style="
+          position:absolute;
+          top:40%;
+          left:70%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container" >
+      <marquee behavior="scroll" style="font-weight: 900;" direction="left" scrollamount="8">
+        Albaro: warm, elegant - Albaro: warm, elegant
+      </marquee>
+    </div>
+
+    <p class="paragraph" >
+        This elegant serif typeface is based in exploration using a broad-nib pen. 
+        It lays the foundational character of the typeface, giving shapes distinct warmth and 
+        sophistication. <br><br> <a href="https://www.luzi-type.ch/notes-albaro" style="color: white;">Albaro</a> comes in two versions: Display and Text, each designed to cater to 
+        specific typographical needs while maintaining the essence of its calligraphic roots.
+    </p>
+  </div>
+
+    <!-- 
+    ===========================
+        3) Yport SECTION
+    ===========================
+  -->
+  <div 
+    style="
+      font-family: 'Yport'; 
+      position: relative; 
+      width: 100%; 
+      margin: 0 auto; 
+      box-sizing: border-box; 
+      overflow: hidden; 
+      padding-bottom: 2rem;
+      background-color: #dfdfdf;
+      color: #000000;
+    "
+  >
+    <div class="image-layers">
+      <img 
+        src="assets/Yport001.jpg"
+        alt="ThirdFont Image 1"
+        style="
+          position:absolute;
+          top:25%;
+          left:5%;
+          width:400px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport002.jpg"
+        alt="ThirdFont Image 2"
+        style="
+          position:absolute;
+          top:25%;
+          left:35%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-3deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-3deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport003.jpg"
+        alt="ThirdFont Image 3"
+        style="
+          position:absolute;
+          top:10%;
+          left:30%;
+          width:200px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(2deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(2deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport004.png"
+        alt="ThirdFont Image 4"
+        style="
+          position:absolute;
+          top:15%;
+          left:55%;
+          width:200px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(8deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(8deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport005.jpg"
+        alt="ThirdFont Image 5"
+        style="
+          position:absolute;
+          top:55%;
+          left:50%;
+          width:250px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport006.jpg"
+        style="
+          position:absolute;
+          top:10%;
+          left:70%;
+          width:100px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport007.jpg"
+        alt="ThirdFont Image 5"
+        style="
+          position:absolute;
+          top:65%;
+          left:20%;
+          width:200px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+      <img 
+        src="assets/Yport008.png"
+        style="
+          position:absolute;
+          top:25%;
+          left:70%;
+          width:300px;
+          height:auto;
+          object-fit:cover;
+          transition:transform 0.5s ease, z-index 0.5s ease;
+          transform:rotate(-5deg);
+        "
+        onmouseover="this.style.transform='translateY(-20px) scale(1.1) rotate(0deg)'; this.style.zIndex='5';"
+        onmouseout="this.style.transform='rotate(-5deg)'; this.style.zIndex='1';"
+      >
+    </div>
+
+    <div class="marquee-container">
+      <marquee behavior="scroll" style="font-weight: 900;" direction="left" scrollamount="8">
+        Yport, geometry, calligraphic - Yport, geometry, calligraphic
+      </marquee>
+    </div>
+
+    <p class="paragraph">
+        Pushes the possibilities within the sans-serif genre, based on calligraphy, 
+        but maintaining a geometric style and sleek look..
+    </p>
+  </div>
+
+</body>
+</html>
