@@ -13,6 +13,11 @@
        font-style: normal;
 }
 
+@font-face {
+  font-family: jogan;
+  src: url('fonts/jogansoft.ttf');
+}
+
 /*===============
   global styles
 ===============*/
